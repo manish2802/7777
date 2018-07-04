@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html ng-app="myApp" lang="en">
+<head>
+<title>Upload MultipartFile</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/loader.css">
+<link rel="stylesheet" href="css/slide.css">
+<link rel="stylesheet" href="css/spinner.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<!-- 	<a class="navbar-brand" href="#"><font color="red" size="5">ABSA</font></a> -->
+				<img src="images/Absa.jpg" style="width: 124px;">
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a ui-sref="home"
+					style="height: 52px; padding-right: 23px;">Home</a></li>
+				<li><a ui-sref="fileupload" style="height: 52px; padding-right: 23px;">Upload Build</a></li>
+				<li><a ui-sref="download-form-parent" style="height: 52px; padding-right: 23px;">Download Build</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container" ui-view></div>
+</body>
+
+
+<!--Angular js lib  -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript"
+	src=https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular-resource.min.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.11/ngStorage.min.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/ng-table/1.0.0/ng-table.min.js"></script>
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.min.js"></script>
+<script
+	src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+
+<!--for sliding  -->
+<script type="text/javascript"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular-animate.min.js"></script>
+
+
+
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/route.js"></script>
+<script type="text/javascript" src="js/controller/IbocCtrl.js"></script>
+<script type="text/javascript" src="js/controller/IbocCtrlDetail.js"></script>
+<script type="text/javascript" src="js/controller/IbocSearchCtrl.js"></script>
+<script type="text/javascript" src="js/controller/IbocSearchListCtrl.js"></script>
+<script type="text/javascript" src="js/controller/CarouselCtrl.js"></script>
+<script type="text/javascript" src="js/fileModel.js"></script>
+<script type="text/javascript" src="js/factory/loding.js"></script>
+
+
+
+
+</html>

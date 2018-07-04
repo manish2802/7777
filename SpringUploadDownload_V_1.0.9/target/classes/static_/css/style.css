@@ -1,0 +1,14 @@
+.imgSpin{
+	height: 200px;
+	width: 200px;
+	text-align: center;
+}
+
+.panel{
+	margin-bottom: 2px;
+	background-color: #eee;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
+}

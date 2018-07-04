@@ -1,0 +1,36 @@
+// Creating the directory to store file
+				// String rootPath = System.getProperty("catalina.home");
+				// File dir = new File(rootPath + File.separator + "ibocbuild");
+				// if (!dir.exists())
+				// dir.mkdirs();
+
+				// String absoultePath = dir.getAbsolutePath() + File.separator;
+
+				// Create the file on server
+				/*
+				 * File serverFile = new File(absoultePath + pListName +
+				 * CommonUtil.getTimeStamp()); BufferedOutputStream stream = new
+				 * BufferedOutputStream(new FileOutputStream(serverFile));
+				 * stream.write(pListBytes); stream.close();
+				 * 
+				 * File serverFile1 = new File(absoultePath + ipaName +
+				 * CommonUtil.getTimeStamp()); BufferedOutputStream stream1 =
+				 * new BufferedOutputStream(new FileOutputStream(serverFile1));
+				 * stream1.write(ipaBytes); stream1.close();
+				 * 
+				 * File serverFile2 = new File(absoultePath + relNotesName +
+				 * CommonUtil.getTimeStamp()); BufferedOutputStream stream2 =
+				 * new BufferedOutputStream(new FileOutputStream(serverFile2));
+				 * stream2.write(relNotesBytes); stream2.close();
+				 */
+				 ==================================================
+				 
+				 
+				 https://www.callicoder.com/spring-boot-file-upload-download-rest-api-example/
+				 https://www.callicoder.com/hibernate-spring-boot-jpa-one-to-one-mapping-example/
+				 
+				 image slide:
+				 http://onehungrymind.com/build-a-full-page-angularjs-slideshow/
+				 
+				 
+				 			 

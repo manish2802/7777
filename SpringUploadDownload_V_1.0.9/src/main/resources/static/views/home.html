@@ -1,0 +1,15 @@
+
+<div class="container" ng-controller="CarouselCtrl">
+<div class="panel panel-default">
+		<div class="panel-heading">
+			<span class="lead"><h1>iBoc Upload And Download Page</h1></span>
+		</div>
+	</div>
+ <div class="panel panel-default" style="height:450px">
+	<div class="slider">
+		<img ng-repeat="slide in slides" class="slide slide-animation"
+			ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.src}}">
+		<!-- CODE OMITTED -->
+	</div>
+	</div>
+</div>

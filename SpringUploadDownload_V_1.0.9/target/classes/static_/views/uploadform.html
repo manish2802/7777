@@ -1,0 +1,144 @@
+<div class="row text-center">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<span class="lead"><h1>Upload File Request Page</h1></span>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="row" ng-controller="IbocCtrl as ic">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-6">
+				<div style="text-align: center;" data-loading></div>
+
+				<div ng-show="true">
+					<div class="formcontainer">
+						<form name="myForm">
+							<div class="form-group row">
+								<label for="inputCheckbox" class="col-sm-4 col-form-label">Supporting
+									OS</label>
+								<div class="col-sm-8">
+									<input type="checkbox" class="form-check-input"
+										ng-model="suppOs" value="iOS" name="suppOs" />
+								</div>
+							</div>
+
+
+
+							<div class="form-group row">
+								<label for="inputDropDown" class="col-sm-4 col-form-label">Select
+									Application:</label>
+								<div class="col-sm-8">
+									<select name="appName" ng-model="appName" class="form-control">
+										<option value="iboc africa">Iboc Africa</option>
+									</select>
+								</div>
+								<div class="col-sm-4">
+									<span style="color: red">{{msgApp}}</span>
+								</div>
+
+							</div>
+
+							<!-- <div class="form-group row">
+				<label for="inputDropDown" class="col-sm-4 col-form-label">Select
+					Application:</label>
+				<div class="col-sm-8">
+					<select name="select1" ng-model="SelectedValue"
+						class="form-control" ng-options="env.env for env in enviorment"></select>
+				</div>
+			</div> -->
+
+
+							<div class="form-group row">
+								<label for="inputFile" class="col-sm-4 col-form-label">PLIST
+									FILE:</label>
+								<div class="col-sm-8">
+									<input id="plistId" file-model="pListFile" type="file"
+										class="form-control" placeholder="PList File" name="pListFile" />
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="inputFile" class="col-sm-4 col-form-label">IPA
+									FILE</label>
+								<div class="col-sm-8">
+									<input type="file" file-model="ipaFile" class="form-control"
+										placeholder="ipafile" name="ipaFile" />
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="inputText" class="col-sm-4 col-form-label">Version</label>
+								<div class="col-sm-8">
+									<input type="text" ng-model="version" name="version"
+										class="form-control" required>
+
+									<!-- <span style="color: red;"
+						ng-show="myForm.version.$invalid">Please Enter version</span><br />  -->
+
+								</div>
+
+
+							</div>
+							<div class="form-group row">
+								<label for="inputDropDown" class="col-sm-4 col-form-label">Application
+									Type:</label>
+								<div class="col-sm-8">
+									<!-- <select name="environment" ng-model="environment"
+						class="form-control">
+						<option value="sit">SIT</option>
+						<option value="uat">UAT</option>
+						<option value="nft">NFT</option>
+						<option value="production">PROD</option>
+						<option value="dr">DR</option>
+					</select> -->
+									<select name="environment" ng-model="envvalue"
+										class="form-control"
+										ng-options=" env.value as env.env  for env in enviorment">
+										<option value="">Select Enviorment</option>
+										<!--<span ng-show="myForm.environment.$error.required">--Select--</span> -->
+									</select>
+								</div>
+
+								<span style="color: red">{{msgEnv}}</span>
+
+
+							</div>
+
+							<div class="form-group row">
+								<label for="inputFile" class="col-sm-4 col-form-label">Release
+									Notes:</label>
+								<div class="col-sm-8">
+									<input type="file" file-model="relNotes" class="form-control"
+										name="relNotes">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="inputInfo" class="col-sm-4 col-form-label">Info:</label>
+								<div class="col-sm-8">
+									<textarea ng-model="fileInfo" rows="2" cols="20"
+										class="form-control" /></textarea>
+								</div>
+							</div>
+
+							<div>
+								<button type="button" ng-click="uploadFile();"
+									class="btn btn-success" id="btnSubmit">Upload</button>
+								<a ng-click="
+					resetForm();" class="btn btn-success"
+									role="button"> Reset</a>
+							</div>
+							<h4>
+								<span style="color: red" ng-show="true" ng-bind="confMessage">
+								</span>
+							</h4>
+
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3"></div>
+		</div>
+	</div>
+</div>
+
+
